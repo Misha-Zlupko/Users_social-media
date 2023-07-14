@@ -24,16 +24,11 @@ export const userSlice = createSlice({
       }
     },
   },
-  //   extraReducers: builder => {
-  //     builder.addCase(fetchUser.fulfilled, (state, action) => {
-  //       console.log(state.users);
-  //       state.users = [...state.users, ...action.payload]; // Merge existing users with fetched users
-  //     });
-  //   },
+
   extraReducers: builder => {
     builder.addCase(fetchUser.fulfilled, (state, action) => {
       console.log(state.users);
-      state.users = action.payload; // Merge existing users with fetched users
+      state.users = action.payload;
     });
   },
 });

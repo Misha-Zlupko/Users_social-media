@@ -15,7 +15,6 @@ import { userSlice } from './user/slice';
 const usersReducer = {
   key: 'users',
   storage,
-  // whitelist: ['users'],
 };
 const persistedReducer = persistReducer(usersReducer, userSlice.reducer);
 
