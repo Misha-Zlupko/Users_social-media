@@ -6,11 +6,12 @@ import { Link } from 'react-router-dom';
 
 export const Home = () => {
   const users = useSelector(state => state.users.users);
+  console.log(users);
   const [currentPage, setCurrentPage] = useState(1);
   const usersPerPage = 3;
   const startIndex = (currentPage - 1) * usersPerPage;
   const endIndex = startIndex + usersPerPage;
-  // const displayedUsers = users.slice(0, endIndex);
+  const displayedUsers = users.slice(0, endIndex);
 
   const loadMoreUsers = () => {
     setCurrentPage(currentPage + 1);
@@ -19,13 +20,12 @@ export const Home = () => {
   return (
     <Container>
       <Link to="/tweets">Tweets</Link>
-      <Card />
-      {users.length > endIndex && (
-        <BtnLoadMore onClick={loadMoreUsers}>Load More</BtnLoadMore>
-      )}
+      {displayedUsers.map(user => (
+        <Card key={user.id} user={user} />
+      ))}
+      {/* {users.length > endIndex && (
+        )} */}
+      <BtnLoadMore onClick={loadMoreUsers}>Load More</BtnLoadMore>
     </Container>
   );
 };
-// {displayedUsers.map(user => (
-//   <Card key={user.id} user={user} />
-// ))}
