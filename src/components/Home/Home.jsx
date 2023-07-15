@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux/es/hooks/useSelector';
 import { Link } from 'react-router-dom';
 
 export const Home = () => {
-  const users = useSelector(state => state.users.users);
+  const users = useSelector(state => state);
   console.log(users);
   const [currentPage, setCurrentPage] = useState(1);
   const usersPerPage = 3;
