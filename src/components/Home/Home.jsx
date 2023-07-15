@@ -10,7 +10,7 @@ export const Home = () => {
   const usersPerPage = 3;
   const startIndex = (currentPage - 1) * usersPerPage;
   const endIndex = startIndex + usersPerPage;
-  const displayedUsers = users.slice(0, endIndex);
+  // const displayedUsers = users.slice(0, endIndex);
 
   const loadMoreUsers = () => {
     setCurrentPage(currentPage + 1);
