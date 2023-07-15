@@ -19,13 +19,13 @@ export const Home = () => {
   return (
     <Container>
       <Link to="/tweets">Tweets</Link>
-
-      {displayedUsers.map(user => (
-        <Card key={user.id} user={user} />
-      ))}
+      <Card />
       {users.length > endIndex && (
         <BtnLoadMore onClick={loadMoreUsers}>Load More</BtnLoadMore>
       )}
     </Container>
   );
 };
+// {displayedUsers.map(user => (
+//   <Card key={user.id} user={user} />
+// ))}
