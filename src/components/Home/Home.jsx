@@ -26,7 +26,6 @@ export const Home = () => {
       {users.length > endIndex && (
         <BtnLoadMore onClick={loadMoreUsers}>Load More</BtnLoadMore>
       )}
-      <BtnLoadMore onClick={loadMoreUsers}>Load More</BtnLoadMore>
     </Container>
   );
 };
