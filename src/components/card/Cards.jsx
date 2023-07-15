@@ -15,7 +15,6 @@ import React from 'react';
 import Logo from '../../foto/LogoUser.png';
 
 export const Card = ({ user }) => {
-  console.log(user.avatar);
   const formattedFollowers = user.followers.toLocaleString('en', {
     useGrouping: true,
   });
