@@ -1,4 +1,4 @@
-import { Card } from 'components/card/Cards';
+import { Card } from '../../components/card/Cards';
 import { BtnLoadMore, Container } from './Home.style';
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux/es/hooks/useSelector';
