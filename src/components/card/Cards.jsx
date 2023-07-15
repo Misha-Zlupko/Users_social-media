@@ -1,5 +1,5 @@
-import { BtnFollowing } from 'components/buttons/BtnFollowing';
-import { ButtonFollow } from 'components/buttons/BtnFollow';
+import { ButtonFollow } from '../buttons/BtnFollow';
+import { BtnFollowing } from '../buttons/BtnFollowing';
 import fotoMes from '../../foto/pictureCard.png';
 import {
   CardStyle,
