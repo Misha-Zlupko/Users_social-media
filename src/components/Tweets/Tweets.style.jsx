@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const LinkWrap = styled.button`
   background: #5cd3a8;
@@ -15,4 +16,8 @@ export const LinkWrap = styled.button`
   &:hover {
     opacity: 0.8;
   }
+`;
+
+export const StyledLink = styled(Link)`
+  color: black;
 `;

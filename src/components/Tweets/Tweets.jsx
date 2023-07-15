@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
-import { LinkWrap } from './Tweets.style';
+import { LinkWrap, StyledLink } from './Tweets.style';
 
 export const Tweets = () => {
   return (
     <LinkWrap>
-      <Link to="/">Back</Link>
+      <StyledLink to="/">Back</StyledLink>
     </LinkWrap>
   );
 };

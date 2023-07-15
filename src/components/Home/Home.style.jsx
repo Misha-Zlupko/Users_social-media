@@ -1,14 +1,14 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   font-size: 40px;
   color: #010101;
   margin: 0;
-  flex-wrap: wrap;
   gap: 100px;
 `;
 
@@ -27,4 +27,20 @@ export const BtnLoadMore = styled.button`
   &:hover {
     opacity: 0.8;
   }
+`;
+
+export const WrapperCard = styled.div`
+  display: flex;
+  gap: 100px;
+`;
+
+export const StyledLink = styled(Link)`
+  color: black;
+  text-decoration: none;
+  font-size: 44px;
+  font-family: Montserrat;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  background: #5cd3a8;
 `;
