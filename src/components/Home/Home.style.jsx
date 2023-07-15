@@ -32,6 +32,7 @@ export const BtnLoadMore = styled.button`
 export const WrapperCard = styled.div`
   display: flex;
   gap: 100px;
+  flex-wrap: wrap;
 `;
 
 export const StyledLink = styled(Link)`
