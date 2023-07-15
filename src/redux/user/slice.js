@@ -4,6 +4,7 @@ import { fetchUser } from './userOperations';
 const initialState = {
   users: [],
   follow: true,
+  whitelist: ['users'],
 };
 
 export const userSlice = createSlice({
